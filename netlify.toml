@@ -1,0 +1,12 @@
+[[headers]]
+  # Define which paths this specific [[headers]] block will cover.
+  for = "/"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Methods = "*"
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/twikoo"
+  status = 200
+  force = true
